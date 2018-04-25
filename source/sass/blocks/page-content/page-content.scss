@@ -1,3 +1,38 @@
 .page-content {
-  height: 200px;
+  width: 100%;
+}
+
+.page-content__heading-wrapper {
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 25px;
+}
+
+.page-content__heading {
+  margin: 0;
+  margin-bottom: 25px;
+  font: 400 36px/60px $primary-font;
+}
+
+@media (min-width: $tablet-width) {
+  .page-content__heading {
+    margin: 0;
+    margin-bottom: 25px;
+    font: 400 60px/60px $primary-font;
+  }
+  .page-content__heading-wrapper {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-content__heading {
+    margin: 0;
+    margin-bottom: 25px;
+    font: 400 60px/60px $primary-font;
+  }
+  .page-content__heading-wrapper {
+    padding: 0 40px;
+  }
 }

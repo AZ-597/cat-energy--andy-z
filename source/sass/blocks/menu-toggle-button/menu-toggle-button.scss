@@ -1,0 +1,20 @@
+.menu-toggle-button {
+  display: flex;
+  width: 18px;
+  height: 34px;
+  margin-left: 16px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../../../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  &--is-open {
+    background-image: url("../../../img/icon-mobile-menu.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .menu-toggle-button {
+    display: none;
+  }
+}

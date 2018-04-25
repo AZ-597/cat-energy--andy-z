@@ -1,3 +1,37 @@
 .page-header {
+  width: 100%;
+  .wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}
 
-}
+.page-header__mobile-wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  margin: 0 20px;
+}
+
+@media (max-width: $tablet-width - 1) {
+  .page-header {
+    .wrapper {
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    .wrapper {
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+  .page-header__mobile-wrap {
+    margin: 0;
+  }
+}

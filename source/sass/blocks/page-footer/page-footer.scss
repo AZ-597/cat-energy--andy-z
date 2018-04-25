@@ -1,11 +1,11 @@
 .page-footer {
+  width: 100%;
+  background-color: $grey-50;
   .wrapper {
     display: flex;
     flex-flow: column nowrap;
     align-items: stretch;
   }
-  background-color: $grey-50;
-  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
