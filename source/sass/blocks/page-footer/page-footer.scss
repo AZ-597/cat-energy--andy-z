@@ -1,0 +1,19 @@
+.page-footer {
+  .wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+  }
+  background-color: $grey-50;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    .wrapper {
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

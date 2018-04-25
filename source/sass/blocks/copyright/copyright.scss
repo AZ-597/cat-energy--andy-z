@@ -1,0 +1,24 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  border-top: 1px solid $grey-60;
+}
+
+.copyright__subject {
+  margin: 0;
+  font: normal 16px/1.5 $secondary-font;
+  color: $black;
+}
+
+.copyright__logo {
+  margin: 0;
+  margin-left: 30px;
+}
+
+@media (min-width:$tablet-width) {
+  .copyright {
+    border: none;
+  }
+}

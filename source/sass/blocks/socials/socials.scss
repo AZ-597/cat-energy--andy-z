@@ -1,0 +1,37 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid $grey-60;
+}
+
+.socials__item {
+  /*  */
+}
+
+.socials__item+.socials__item {
+  margin-left: 30px;
+}
+
+.socials__link {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  /* Просто для наглядности :) */
+  background-color: $grey-80;
+  border-radius: 5px;
+}
+
+@media (min-width:$tablet-width) {
+  .socials {
+    border: none;
+  }
+  .socials__link {
+    width: 30px;
+    height: 30px;
+  }
+}
