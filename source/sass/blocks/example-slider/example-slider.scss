@@ -1,0 +1,36 @@
+.example-slider {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.example-slider__frame {
+  /*  */
+}
+
+.example-slider__slide {
+  width: 100%;
+}
+
+.example-slider__controls {
+  align-self: center;
+  display: flex;
+}
+
+.example-slider__control-button {
+  background: none;
+  border: none;
+  font: 400 16px/20px $primary-font;
+  text-transform: uppercase;
+}
+
+.example-slider__toggle {
+  background-color: $primary-color;
+}
+/*
+@media (min-width:$tablet-width) {
+  .example-slider {
+    margin-top: -500px;
+  }
+
+}
+ */
