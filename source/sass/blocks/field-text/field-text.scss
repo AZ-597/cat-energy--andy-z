@@ -1,0 +1,24 @@
+.field-text {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+}
+.field-text+.field-text {
+  margin-top: 20px;
+}
+
+.field-text__label {
+  font: 400 20px/20px $primary-font;
+  text-transform: uppercase;
+  color: $black;
+  white-space: nowrap;
+  margin-right: 15px;
+}
+
+.field-text__input {
+  padding: 0 15px;
+  height: 45px;
+  width: 100%;
+  font: 400 20px/20px $primary-font;
+  border: 1px solid $grey-60;
+}

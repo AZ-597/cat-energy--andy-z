@@ -1,0 +1,16 @@
+.field-textarea {
+  display: flex;
+  width: 100%;
+}
+
+.field-textarea__label {
+  /*  */
+}
+
+.field-textarea__input {
+  padding: 10px;
+  width: 100%;
+  resize: vertical;
+  font: 400 20px/20px $primary-font;
+  border: 1px solid $grey-60;
+}

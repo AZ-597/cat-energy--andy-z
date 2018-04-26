@@ -1,0 +1,59 @@
+.form {
+  /*  */
+}
+
+.form__wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.form__lead {
+  margin: 0;
+  font: 400 14px/18px $primary-font;
+  text-transform: uppercase;
+}
+
+.form__fieldset {
+  padding: 20px 0;
+  &--bordered {
+    border-top: 1px solid $grey-60;
+    border-bottom: 1px solid $grey-60;
+  }
+}
+
+.form__fieldset-legend-wrap {
+  overflow: hidden;
+}
+
+.form__fieldset-legend {
+  position: relative;
+  font: 400 24px/24px $primary-font;
+  margin: 16px -20px;
+  padding: 0 20px;
+  width: auto;
+  display: inline-flex;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top:10px;
+    display: flex;
+    height: 5px;
+    width: 5000px;
+    background-color: $primary-color;
+  }
+  &::before {
+    right: 100%;
+  }
+  &::after {
+    left: 100%;
+  }
+}
+
+.form__btn {
+  /*  */
+}
+
+.form__footnote {
+  align-self: center;
+}
