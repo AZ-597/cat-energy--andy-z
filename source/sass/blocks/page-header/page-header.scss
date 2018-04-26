@@ -25,8 +25,6 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    height: 80px;
-    margin-bottom: -80px;
     .wrapper {
       flex-flow: row nowrap;
       justify-content: space-between;
@@ -39,8 +37,5 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
-    height: 100px;
-    margin-bottom: -100px;
-  }
+  /*  */
 }

@@ -1,0 +1,65 @@
+.programs {
+  .wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}
+
+.programs__case {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: $grey-50;
+}
+
+.programs__case-lead {
+  margin: 0;
+  font: 400 24px/37px $primary-font;
+  text-transform: uppercase;
+}
+
+.programs__case-copy {
+  position: relative;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  font: normal 14px/18px $secondary-font;
+  border-bottom: 1px solid $grey-60;
+}
+
+.programs__case-link {
+  display: flex;
+  margin-top: auto;
+  font: 400 16px/16px $primary-font;
+  color: $black;
+  text-transform: uppercase;
+  &::after {
+    content: "";
+    display: inline-flex;
+    width: 24px;
+    height: 16px;
+    margin-left: 10px;
+    background: url("../../../img/icon-right-arrow-long.svg") no-repeat;
+    background-position: center center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs__case-copy {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    .wrapper {
+      flex-flow: row nowrap;
+    }
+  }
+  .programs__case {
+    width: 45.75%;
+  }
+  .programs__case+.programs__case {
+    margin-left: 8.5%;
+  }
+}
