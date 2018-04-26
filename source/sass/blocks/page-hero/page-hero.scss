@@ -1,0 +1,94 @@
+.page-hero {
+  padding-top: 30px;
+  background-image: url("../../../img/index-can-mobile@1x.png"), url("../../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 170px, top center;
+  background-size: auto auto, 100% auto;
+  /* outline: 1px dashed red; */
+  & .wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    min-height: 450px;
+    /* outline: 1px dashed blue;
+
+ */
+    width: 100%;
+  }
+  & .btn {
+    margin-top: auto;
+  }
+}
+
+.page-hero__heading {
+  margin: 0;
+  margin-bottom: 16px;
+  font: 400 36px/1 $primary-font;
+  text-align: center;
+  color: white;
+}
+
+.page-hero__lead-text {
+  font: 400 14px/1 $primary-font;
+  color: white;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .page-hero {
+    padding-top: 80px;
+    background-image: url("../../../img/index-can-mobile@1x.png"), none;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center bottom, top center;
+    background-size: auto 60%, 100% auto;
+    & .wrapper {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      min-height: 840px;
+    }
+    & .btn {
+      width: auto;
+      margin: 0;
+      margin-left: 90px;
+    }
+  }
+  .page-hero__heading {
+    margin: 0;
+    margin-bottom: 16px;
+    font: 400 60px/60px $primary-font;
+    text-align: left;
+    color: $black;
+    margin-left: 90px;
+    width: 40%;
+  }
+  .page-hero__lead-text {
+    margin-bottom: 36px;
+    font: 400 20px/20px $primary-font;
+    color: $black;
+    margin-left: 90px;
+    width: 40%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-hero {
+    background-image: url("../../../img/index-can-mobile@1x.png"), url("../../../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 170px, top right;
+    background-size: auto 500px, 50% auto;
+
+    & .wrapper {
+      min-height: 700px;
+    }
+    & .btn {
+      margin-left: 80px;
+    }
+  }
+  .page-hero__heading {
+    margin-left: 80px;
+  }
+  .page-hero__lead-text {
+    margin-left: 80px;
+  }
+}

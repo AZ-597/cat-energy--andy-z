@@ -1,0 +1,33 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  font: 400 16px/1.25 $primary-font;
+  color: white;
+  text-transform: uppercase;
+  background: $primary-color;
+  border: none;
+  &:hover,
+  &:focus {
+    background: $primary-color-darken;
+  }
+  &:active {
+    color: rgba($color: white, $alpha: 0.3);
+    background: $primary-color-darken;
+  }
+  &--secondary {
+    color: $grey-90;
+    background: $grey-50;
+    &:hover,
+    &:focus {
+      background: $grey-55;
+    }
+    &:active {
+      color: rgba($color: $grey-90, $alpha: 0.3);
+      background: $grey-55;
+    }
+  }
+}
